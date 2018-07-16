@@ -1,8 +1,8 @@
   var map;
   function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 51.507, lng: 0.1278},
-      zoom: 10,
+      center: {lat: 51.507, lng: -0.0178},
+      zoom: 11,
       styles: [
 		    {
 		        "featureType": "all",
@@ -175,9 +175,15 @@
 		            }
 		        ]
 		    }
-		]
+	  ]
     });
-  }
+	  for(i=0; i<50;i++){
+	  	var lng = (Math.random() * (0.30 - 0) + 0) - 0.26
+	  	var lat = (Math.random() * (51.55 - 51.35) + 51.35) 
+	  	var marker = new google.maps.Marker({position: {lat:lat, lng: lng}, map: map})	
+	  };    
+  };
+
 
 $( document ).ready(function() {
  	$('span.checkmark').on('click', function(e){
