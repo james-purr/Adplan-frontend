@@ -340,3 +340,7 @@ textarea {
     margin-left: 25px;    
 }
 
+ #map {
+    height: 100%;
+  }
+
