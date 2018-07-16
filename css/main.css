@@ -342,5 +342,58 @@ textarea {
 
  #map {
     height: 100%;
+    margin-top: 20px;
   }
+
+.dropdown-menu.map-option li{
+  padding: 10px;
+  position:relative;
+}
+
+.dropdown-menu.map-option li input.checkbox{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.dropdown-menu.map-option li span.checkmark{
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    height: 23px;
+    width: 23px;
+    border: 1px solid #80808052;
+    border-radius: 4px;
+}
+
+.map-dropdown-option{
+  margin-top: 21px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.dropdown-menu.map-option li input.checkbox:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.dropdown-menu.map-option li span.tick{
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    /* transform: rotate(45deg); */
+    border: solid #2196F3;;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    height: 16px;
+    width: 8px;
+    display:none;
+}
+
+.dropdown-menu.map-option li span.tick.active{
+  display:block;
+}
 
