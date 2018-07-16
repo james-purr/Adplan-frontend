@@ -180,10 +180,16 @@
 	  for(i=0; i<50;i++){
 	  	var lng = (Math.random() * (0.30 - 0) + 0) - 0.26
 	  	var lat = (Math.random() * (51.55 - 51.35) + 51.35) 
-	  	var marker = new google.maps.Marker({position: {lat:lat, lng: lng}, map: map})	
+	  	var marker = new google.maps.Marker({position: {lat:lat, lng: lng}, map: map})	;
+	  	marker.addListener('click', function() {
+	  		displayCampaignDetails();
+        });
 	  };    
   };
 
+function displayCampaignDetails(){
+	console.log('click event');
+};
 
 $( document ).ready(function() {
  	$('span.checkmark').on('click', function(e){

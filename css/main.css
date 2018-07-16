@@ -306,6 +306,7 @@ textarea {
 }
 .container{
     height: 90vh;
+    position:relative;
 }
 
 .home-search-input{
@@ -343,6 +344,7 @@ textarea {
  #map {
     height: 100%;
     margin-top: 20px;
+    clear: both;
   }
 
 .dropdown-menu.map-option li{
@@ -435,5 +437,45 @@ textarea {
   font-size: 18px;
   padding-top: 2px;
   color: white;
+}
+
+.adspace-info-block{
+    position: absolute!important;
+    /*right: -380px;*/
+    right: -160px;
+    top: 79px;  
+    height: 100%;
+    background: white;
+}
+
+.adspace-info-block .content{
+  padding: 15px;
+}
+/*.adspace-info-block .content.address{
+  text-align:center;
+}*/
+
+.company-logo{
+  width: 50%;
+}
+
+@media only screen and (max-width: 767px)  {
+  .campaign-link{
+    float:left;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 992px)  {
+  .home-search-input{
+    width:100%!important;
+  }
+  .home-search-button{
+    width: 38%!important;
+    margin-top: 33px;    
+  }
+  .search-form .blurb{
+    max-width: 43%;
+  }
 }
 
