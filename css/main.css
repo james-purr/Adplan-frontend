@@ -307,6 +307,7 @@ textarea {
 .container{
     height: 90vh;
     position:relative;
+    overflow: hidden;
 }
 
 .home-search-input{
@@ -441,8 +442,7 @@ textarea {
 
 .adspace-info-block{
     position: absolute!important;
-    /*right: -380px;*/
-    right: -160px;
+    right: -380px;
     top: 79px;  
     height: 100%;
     background: white;
@@ -457,6 +457,30 @@ textarea {
 
 .company-logo{
   width: 50%;
+}
+
+.card-body{
+  border-bottom: 1px solid #80808040;
+  padding-bottom: 0px!important;
+  padding-top: 9px!important;
+}
+
+.add-to-campaign{
+  margin: 0 auto;
+  padding: 12px 45px!important;
+  border-radius: 25px!important;
+  margin-top: 11px;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+.close-icon{
+  float: right;
+  font-size: 30px!important;
+  margin-top: 6px; 
+}
+.close-icon:hover{
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 767px)  {

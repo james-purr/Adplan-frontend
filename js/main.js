@@ -188,7 +188,25 @@
   };
 
 function displayCampaignDetails(){
-	console.log('click event');
+	if($( ".adspace-info-block" ).css('right') == "0px"){
+		$( ".adspace-info-block" ).animate({
+		    right: "-=380",
+		  }, 500, function() {
+		});
+	}else{
+		$( ".adspace-info-block" ).animate({
+		    right: "+=380",
+		  }, 500, function() {
+		});		
+	}
+
+};
+
+function closeAdspace(){
+	$( ".adspace-info-block" ).animate({
+	    right: "-=380",
+	  }, 500, function() {
+	});
 };
 
 $( document ).ready(function() {
@@ -210,4 +228,5 @@ $( document ).ready(function() {
  		console.log('checkmark click event')
 		$(e.target).toggleClass('active');
  	});
+ 	$('.close-icon').on('click', closeAdspace);
  });
