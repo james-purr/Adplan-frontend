@@ -419,3 +419,21 @@ textarea {
   display:block;
 }
 
+.campaign-link{
+  float:right;
+  margin-top: 21px;
+  position:relative;
+}
+
+.campaign-link span.notification{
+  height: 30px;
+  width: 30px;
+  background: red;
+  position: absolute;
+  border-radius: 30px;
+  top: -7px;
+  font-size: 18px;
+  padding-top: 2px;
+  color: white;
+}
+
