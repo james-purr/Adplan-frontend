@@ -350,13 +350,13 @@ textarea {
   position:relative;
 }
 
-.dropdown-menu.map-option li input.checkbox{
+.dropdown-menu.map-option li input.checkbox, .map-checkbox input.checkbox{
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
 
-.dropdown-menu.map-option li span.checkmark{
+.dropdown-menu.map-option li span.checkmark, .map-checkbox span.checkmark{
     position: absolute;
     top: 11px;
     right: 11px;
@@ -366,17 +366,32 @@ textarea {
     border-radius: 4px;
 }
 
-.map-dropdown-option{
+.map-checkbox span.checkmark{
+  top: -1px;
+  left: -2px;
+  height: 30px;
+  width: 30px;
+}
+
+.map-dropdown-option, .map-checkbox{
   margin-top: 21px;
   display: inline-block;
   margin-right: 10px;
 }
 
-.dropdown-menu.map-option li input.checkbox:checked ~ .checkmark {
+.map-checkbox{
+  position: relative;
+}
+
+.map-checkbox span.text{
+  margin-left: 38px;
+}
+
+.dropdown-menu.map-option li input.checkbox:checked ~ .checkmark, .map-checkbox input.checkbox:checked ~ .checkmark{
   background-color: #2196F3;
 }
 
-.dropdown-menu.map-option li span.tick{
+.dropdown-menu.map-option li span.tick, .map-checkbox  span.tick{
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     /* transform: rotate(45deg); */
@@ -393,7 +408,14 @@ textarea {
     display:none;
 }
 
-.dropdown-menu.map-option li span.tick.active{
+.map-checkbox span.tick{
+    top: 1px;
+    left: 8px;
+    height: 23px;
+    width: 11px;
+}
+
+.dropdown-menu.map-option li span.tick.active, .map-checkbox span.tick.active{
   display:block;
 }
 

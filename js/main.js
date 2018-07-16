@@ -8,8 +8,21 @@
 
 $( document ).ready(function() {
  	$('span.checkmark').on('click', function(e){
+ 		console.log('checkmark click event')
  		e.preventDefault();
 		e.stopPropagation();
 		$(e.target).next().toggleClass('active');
+ 	});
+ 	$('span.tick.active').on('click', function(e){
+ 		e.preventDefault();
+		e.stopPropagation();
+ 		console.log('checkmark click event')
+		$(e.target).toggleClass('active');
+ 	});
+ 	$('span.tick').on('click', function(e){
+ 		e.preventDefault();
+		e.stopPropagation();
+ 		console.log('checkmark click event')
+		$(e.target).toggleClass('active');
  	});
  });
