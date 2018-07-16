@@ -294,7 +294,7 @@ textarea {
 }
 
 .Aligner-item {
-  max-width: 50%;
+    width: 100%;
 }
 
 .Aligner-item--top {
@@ -306,4 +306,30 @@ textarea {
 }
 .container{
     height: 90vh;
+}
+
+.home-search-input{
+    display: inline-block!important;
+    width: 40%!important;
+    height: 61px;
+    text-align: center;
+    margin-right: 11px;
+    margin-top: 22px;
+}
+
+.home-search-button{
+    display: inline-block!important;
+    width: 10%!important;
+    height: 60px;
+    margin-bottom: 1px;
+}
+
+.search-form{
+    text-align: center;
+}
+
+.search-form .blurb{
+    margin-bottom: 70px;
+    max-width: 25%;
+    margin: 0 auto;
 }
