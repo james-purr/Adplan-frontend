@@ -333,3 +333,10 @@ textarea {
     max-width: 25%;
     margin: 0 auto;
 }
+
+.nav-search{
+    width: 300px!important;
+    text-align: center;
+    margin-left: 25px;    
+}
+
