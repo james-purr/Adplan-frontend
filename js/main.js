@@ -213,6 +213,17 @@ function openAccountDetails(){
 	$('.account-dropdown').fadeToggle();
 };
 
+function goToBillingSection(){
+	$('.first-sign-up-fields').toggleClass('hidden');
+	$('.second-sign-up-fields').toggleClass('hidden');
+};
+
+function goToRegConfirmation(){
+	$('.second-sign-up-fields').addClass('hidden');
+	$('.third-sign-up-fields').removeClass('hidden');
+	$('.form-header').addClass('hidden');
+};
+
 $( document ).ready(function() {
  	$('span.checkmark').on('click', function(e){
  		console.log('checkmark click event')
@@ -234,4 +245,6 @@ $( document ).ready(function() {
  	});
  	$('.close-icon').on('click', closeAdspace);
  	$('.account-link').on('click', openAccountDetails);
+ 	$('.go-to-billing').on('click', goToBillingSection);
+ 	$('.go-to-payment-confirmed').on('click', goToRegConfirmation);
  });

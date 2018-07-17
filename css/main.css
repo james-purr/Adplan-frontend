@@ -16,9 +16,7 @@ html {
     line-height: 1.4;
 }
 
-html,body{
-  height:100%;
-}
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -598,6 +596,10 @@ h5.username{
   display:none;
 }
 
+.go-to-billing{
+  margin-top: 13px; 
+}
+
 
 
 /*modal*/
@@ -610,6 +612,33 @@ h5.username{
 
 .campaign-new-height{
   height: 55px;
+}
+
+.account-features{
+  height: 100%;
+  background: grey;
+  text-align: center;
+}
+
+.account-upgrade-form{
+  width: 90%;
+  margin: 0 auto; 
+}
+
+.btn.pricing-option{
+  padding: 20px;
+  margin-bottom: 17px;
+}
+
+.features-block{
+  margin: 0 auto;
+    width: 87%;
+    background: #5d5b5b;
+    padding: 19px;
+}
+
+html,body, .full-height{
+  height:100%;
 }
 
 @media only screen and (max-width: 767px)  {

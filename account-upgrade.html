@@ -1,0 +1,210 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">adplan</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  	<ul class="nav navbar-nav mr-auto" ></ul>
+	    <ul class="navbar-nav navbar-right">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Campaigns <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">+new</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link account-link" href="#">Account</a>
+	      </li>
+	      <li class="nav-item">
+	      	<a class="nav-link" href="#">
+	        	<i style="font-size: 27px;"class="fa fa-user-circle"></i>
+	        </a>
+	      </li>      
+	    </ul>
+	  </div>
+	</nav>
+	<div class="container">
+		<div class="row full-height">
+			<div class="col-12 col-md-5 account-features Aligner">
+				<div class="Aligner-item">
+					<h5>Features of the account</h5>
+					<div class="features-block">
+						<p>Search by bus routes</p>
+						<p>Setup campaigns</p>
+						<p>View your medias impact</p>
+						<p>Filter by POI</p>
+						<p>Plan your media campaign</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-7 top-margin">
+				<form class="account-upgrade-form">
+					<h5 class="form-header"> Signup in seconds</h5>
+				  	<div class="first-sign-up-fields">
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full name">
+					  </div>
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Company Name">
+					  </div>
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+					  </div>
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Password">
+					  </div>
+					  <div class="row">
+						  <div class="col-6">
+						  	<button class="btn btn-secondary pricing-option">
+						  		<h6>Pricing option 1:</h6>
+						  		<p>£1,000 per year</p>					  		
+						  	</button>
+
+						  </div>
+						  <div class="col-6">
+						  	<button class="btn btn-secondary pricing-option">
+						  		<h6>Pricing option 1:</h6>
+						  		<p>£1,000 per year</p>					  		
+						  	</button>				  	
+						  </div>
+						</div>
+					  <div class="form-check">
+					    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+					    <label class="form-check-label" for="exampleCheck1">Accept Terms + Conditions</label>
+					  </div>
+				  		<button type="submit" class="btn btn-secondary go-to-billing">Go to Billing</button>
+					</div>
+				  	<div class="second-sign-up-fields hidden">
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name on Card">
+					  </div>
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Card Number">
+					  </div>
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Billing Address">
+					  </div>
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CVC">
+					  </div>
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Exp. Date">
+					  </div>
+					  <div class="form-group">
+					  	<button type="submit" class="btn btn-secondary round-action-button go-to-payment-confirmed">Complete account signup</button>
+					  </div>
+					  <div class="form-group">
+					  	<button type="submit" class="btn btn-secondary go-to-billing">Back</button>
+					  </div>
+					</div>
+				</form>
+					<div class="third-sign-up-fields hidden">
+						<div class="form-group">
+							<h5>We have emailed you</h5>
+							<p>Please enter your confirmation code below:</p>
+						</div>
+						<div class="form-group">
+					    	<input type="email" class="form-control confirmation-code" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your code here">
+						</div>
+					  	<div class="form-group">
+					  		<button type="submit" class="btn btn-secondary round-action-button verify-email">Verify my email</button>
+					  	</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-secondary ">Resend code</button>
+						</div>
+					</div>
+
+			</div>
+		</div>
+	</div>
+		<div class="col-12 col-sm-6 col-md-4 account-dropdown">
+			<div class="row card-body">
+				<div class="col-6">
+					<img src="img/av.png" class="user-avatar"></img>
+				</div>	
+				<div class="col-6 card-text">
+					<button class="btn btn-secondary">Logout</button>	
+				</div>
+				<div class="col-12">
+					<h5 class="username">Jamesbennett100</h5>
+				</div>
+				<div class="col-6 card-text">
+					<button class="btn btn-secondary">Settings</button>
+				</div>	
+				<div class="col-6 card-text">
+					<button class="btn btn-secondary">Profile Settings</button>
+				</div>	
+				<div class="col-6 card-text">
+					<button class="btn btn-secondary">Users</button>
+				</div>	
+				<div class="col-6 card-text">
+					<button class="btn btn-secondary">Upgrade</button>
+				</div>				
+			</div>
+			<div class="row card-body">
+				<div class="col-12 card-text">
+					<button class="btn btn-secondary">Campaign Settings</button>
+				</div>	
+				<div class="col-6 card-text">
+					<button class="btn btn-secondary">Pricing</button>
+				</div>	
+				<div class="col-6 card-text">
+					<button class="btn btn-secondary">Archive</button>
+				</div>	
+			</div>
+			<div class="row card-body">
+				<div class="col-6 card-text">
+					<button class="btn btn-secondary">Help</button>
+				</div>	
+				<div class="col-6 card-text">
+					<button class="btn btn-secondary">Docs</button>
+				</div>				
+			</div>
+		</div>	
+
+
+
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
