@@ -571,6 +571,20 @@ span.tick.active{
     margin-bottom: 20px;
 }
 
+
+
+/*modal*/
+
+.modal-title{
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.campaign-new-height{
+  height: 55px;
+}
+
 @media only screen and (max-width: 767px)  {
   .campaign-link{
     float:left;
