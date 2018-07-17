@@ -357,13 +357,13 @@ textarea {
   position:relative;
 }
 
-.dropdown-menu.map-option li input.checkbox, .map-checkbox input.checkbox, .campaign-table input.checkbox{
+input.checkbox{
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
 
-.dropdown-menu.map-option li span.checkmark, .map-checkbox span.checkmark, .campaign-table span.checkmark{
+span.checkmark{
     position: absolute;
     top: 11px;
     right: 11px;
@@ -380,6 +380,22 @@ textarea {
   width: 30px;
 }
 
+.artwork{
+  position:relative;
+  margin-top: 20px;
+}
+.artwork .checkmark{
+  left: 15px;
+}
+.artwork .tick{
+  left: 22px;
+}
+
+.artwork p{
+    margin-left: 50px;
+    margin-top: 9px;
+}
+
 .map-dropdown-option, .map-checkbox{
   margin-top: 21px;
   display: inline-block;
@@ -394,11 +410,11 @@ textarea {
   margin-left: 38px;
 }
 
-.dropdown-menu.map-option li input.checkbox:checked ~ .checkmark, .map-checkbox input.checkbox:checked ~ .checkmark, .campaign-table input.checkbox:checked ~ .checkmark{
+input.checkbox:checked ~ .checkmark{
   background-color: #2196F3;
 }
 
-.dropdown-menu.map-option li span.tick, .map-checkbox  span.tick, .campaign-table  span.tick{
+span.tick{
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     /* transform: rotate(45deg); */
@@ -430,7 +446,7 @@ textarea {
     width: 11px;
 }
 
-.dropdown-menu.map-option li span.tick.active, .map-checkbox span.tick.active, .campaign-table span.tick.active{
+span.tick.active{
   display:block;
 }
 
@@ -492,6 +508,14 @@ textarea {
   width: 50%;
 }
 
+.remove-media{
+  font-size: 26px!important;
+  vertical-align: -webkit-baseline-middle;
+}
+.remove-media:hover{
+  cursor: pointer;
+}
+
 .card-body{
   border-bottom: 1px solid #80808040;
   padding-bottom: 0px!important;
@@ -529,9 +553,9 @@ textarea {
   margin-top:30px;
 }
 
-.row.action-button .tick-box-button{
-  border-radius: 24px;
-  padding: 12px 20px;
+.round-action-button{
+    border-radius: 24px!important;
+    padding: 12px 20px!important;
 }
 
 .row.filters button{
@@ -540,6 +564,11 @@ textarea {
 
 .campaign-table{
   margin-top:40px;
+}
+
+.separator{
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 767px)  {
