@@ -522,6 +522,15 @@ span.tick.active{
   padding-top: 9px!important;
 }
 
+.user-avatar{
+  width: 46px;
+}
+
+h5.username{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
 
 .account-dropdown .card-body{
   padding-top: 28px!important;
@@ -586,6 +595,7 @@ span.tick.active{
   top: 61px;
   right: 0px;
   background:white;
+  display:none;
 }
 
 

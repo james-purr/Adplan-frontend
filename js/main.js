@@ -209,6 +209,10 @@ function closeAdspace(){
 	});
 };
 
+function openAccountDetails(){
+	$('.account-dropdown').fadeToggle();
+};
+
 $( document ).ready(function() {
  	$('span.checkmark').on('click', function(e){
  		console.log('checkmark click event')
@@ -229,4 +233,5 @@ $( document ).ready(function() {
 		$(e.target).toggleClass('active');
  	});
  	$('.close-icon').on('click', closeAdspace);
+ 	$('.account-link').on('click', openAccountDetails);
  });
