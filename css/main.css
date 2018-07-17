@@ -522,6 +522,16 @@ span.tick.active{
   padding-top: 9px!important;
 }
 
+
+.account-dropdown .card-body{
+  padding-top: 28px!important;
+  padding-bottom: 20px!important;
+}
+
+.account-dropdown .card-text .btn{
+  margin-bottom: 12px;
+}
+
 .add-to-campaign{
   margin: 0 auto;
   padding: 12px 45px!important;
@@ -569,6 +579,13 @@ span.tick.active{
 .separator{
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.account-dropdown{
+  position: absolute!important;
+  top: 61px;
+  right: 0px;
+  background:white;
 }
 
 
