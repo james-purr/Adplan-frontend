@@ -473,6 +473,7 @@ span.tick.active{
   float:right;
   margin-top: 21px;
   position:relative;
+  color:white!important;
 }
 
 .campaign-table span.checkmark{
@@ -499,6 +500,7 @@ span.tick.active{
   position: absolute;
   border-radius: 30px;
   top: -7px;
+  right: -14px;
   font-size: 18px;
   padding-top: 2px;
   color: white;

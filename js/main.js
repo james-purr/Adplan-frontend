@@ -1,4 +1,5 @@
   var map;
+  var mapIconClick=2;
   function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 51.507, lng: -0.0178},
@@ -182,7 +183,11 @@
 	  	var lat = (Math.random() * (51.55 - 51.35) + 51.35) 
 	  	var marker = new google.maps.Marker({position: {lat:lat, lng: lng}, map: map})	;
 	  	marker.addListener('click', function() {
-	  		displayCampaignDetails();
+	  		if(mapIconClick){
+	  			mapIconClick = false
+	  			displayCampaignDetails();
+	  			setTimeout(reactivateMapIconClick, 1000);
+	  		}
         });
 	  };    
   };
@@ -198,9 +203,12 @@ function displayCampaignDetails(){
 		    right: "+=380",
 		  }, 500, function() {
 		});		
-	}
-
+	};		
 };
+
+function reactivateMapIconClick(){
+ 	mapIconClick = true;
+}
 
 function closeAdspace(){
 	$( ".adspace-info-block" ).animate({
@@ -226,6 +234,7 @@ function goToRegConfirmation(){
 
 function togglePricingOptions(){
 	$('.account-dropdown').fadeOut();
+	// closeAdspace();
 	if($( ".media-costings-block" ).css('right') == "0px"){
 		$( ".media-costings-block" ).animate({
 		    right: "-=380",
@@ -237,6 +246,17 @@ function togglePricingOptions(){
 		  }, 500, function() {
 		});		
 	}
+};
+
+function addToCampaign(){
+	if(!$(this).hasClass('pricing-btn')){
+		$('.alert').show();
+		closeAdspace();		
+	};
+};
+
+function hideAlert(){
+	$('.alert').hide();
 };
 
 $( document ).ready(function() {
@@ -263,4 +283,7 @@ $( document ).ready(function() {
  	$('.go-to-billing').on('click', goToBillingSection);
  	$('.go-to-payment-confirmed').on('click', goToRegConfirmation);
  	$('.pricing-btn').on('click', togglePricingOptions);
+ 	$('.add-to-campaign').on('click', addToCampaign);
+ 	$('.hide-alert').on('click', hideAlert);
+ 	$('.amend-pricing').on('click', togglePricingOptions);
  });

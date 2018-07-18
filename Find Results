@@ -1,0 +1,63 @@
+Searching 27 files for "<button class="btn btn-secondary">Pricing</button>"
+
+/Users/jamesbennett/Documents/Adplan-frontend/account-upgrade.html:
+  170  				</div>	
+  171  				<div class="col-6 card-text">
+  172: 					<button class="btn btn-secondary">Pricing</button>
+  173  				</div>	
+  174  				<div class="col-6 card-text">
+
+/Users/jamesbennett/Documents/Adplan-frontend/campaign_show.html:
+  244  			</div>	
+  245  			<div class="col-6 card-text">
+  246: 				<button class="btn btn-secondary">Pricing</button>
+  247  			</div>	
+  248  			<div class="col-6 card-text">
+
+/Users/jamesbennett/Documents/Adplan-frontend/campaigns.html:
+  222  			</div>	
+  223  			<div class="col-6 card-text">
+  224: 				<button class="btn btn-secondary">Pricing</button>
+  225  			</div>	
+  226  			<div class="col-6 card-text">
+
+/Users/jamesbennett/Documents/Adplan-frontend/index.html:
+   89  				</div>	
+   90  				<div class="col-6 card-text">
+   91: 					<button class="btn btn-secondary">Pricing</button>
+   92  				</div>	
+   93  				<div class="col-6 card-text">
+
+/Users/jamesbennett/Documents/Adplan-frontend/map.html:
+  211  				</div>	
+  212  				<div class="col-6 card-text">
+  213: 					<button class="btn btn-secondary">Pricing</button>
+  214  				</div>	
+  215  				<div class="col-6 card-text">
+
+5 matches across 5 files
+
+
+Searching 27 files for "home-search-button"
+
+/Users/jamesbennett/Documents/Adplan-frontend/index.html:
+   54  			  	<p class="blurb">Enter the location of your media campaign to get started</p>
+   55  			    <input type="email" class="form-control home-search-input" aria-describedby="emailHelp" placeholder="Location/Postcode">
+   56: 			  	<button type="submit" class="btn btn-primary home-search-button">Search</button>
+   57  			  </div>
+   58  			</form>		  	
+
+/Users/jamesbennett/Documents/Adplan-frontend/css/main.css:
+  322  }
+  323  
+  324: .home-search-button{
+  325      display: inline-block!important;
+  326      width: 10%!important;
+  ...
+  674      width:100%!important;
+  675    }
+  676:   .home-search-button{
+  677      width: 38%!important;
+  678      margin-top: 33px;    
+
+3 matches across 2 files
