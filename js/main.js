@@ -194,11 +194,13 @@
 
 function displayCampaignDetails(){
 	if($( ".adspace-info-block" ).css('right') == "0px"){
+		$('#map').removeClass('mobile-hide');
 		$( ".adspace-info-block" ).animate({
 		    right: "-=380",
 		  }, 500, function() {
 		});
 	}else{
+		$('#map').addClass('mobile-hide');
 		$( ".adspace-info-block" ).animate({
 		    right: "+=380",
 		  }, 500, function() {
@@ -211,6 +213,7 @@ function reactivateMapIconClick(){
 }
 
 function closeAdspace(){
+	$('#map').removeClass('mobile-hide');
 	$( ".adspace-info-block" ).animate({
 	    right: "-=380",
 	  }, 500, function() {
@@ -230,6 +233,8 @@ function goToRegConfirmation(){
 	$('.second-sign-up-fields').addClass('hidden');
 	$('.third-sign-up-fields').removeClass('hidden');
 	$('.form-header').addClass('hidden');
+	$('.account-features').addClass('hidden');
+	$('.account-upgrade-form').remove();
 };
 
 function togglePricingOptions(){

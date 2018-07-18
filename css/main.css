@@ -312,7 +312,7 @@ textarea {
 .container{
     height: 90vh;
     position:relative;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -627,6 +627,10 @@ h5.username{
   margin-top: 13px; 
 }
 
+.sign-up-confirmation-wrapper{
+  margin:0 auto;
+}
+
 
 
 /*modal*/
@@ -693,6 +697,66 @@ html,body, .full-height{
   .campaign-link{
     float:left;
     margin-bottom: 20px;
+    width:100%;
+  }
+  .navbar form{
+    width: 0px;
+    height: 0px;
+    display:none;
+  }
+  .nav-search{
+    width: 100%!important;
+    margin-left: 0;
+  }
+  .btn-outline-success{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .map-dropdown-option, .map-dropdown-option a, .map-dropdown-option div{
+    width: 100%;
+  }
+  .adspace-info-block{
+    top: 0px;
+    height: 138.5%;
+    z-index: 1;
+  }
+  .media-costings-block{
+    z-index:10;
+    position: fixed!important;
+    top: 0px;
+  }
+
+  .search-campaigns-form{
+    margin-left: 0px!important;
+  }
+  .search-campaigns-form .form-inline{
+    width: 100%;
+  }
+  .filters .btn{
+    width:100%;
+  }
+  .action-button .round-action-button{
+    margin:0 auto;
+  }
+  .modal-dialog{
+    top: 15%;
+  }
+  .new-campaign-field{
+    width:100%;
+    margin-bottom: 20px;
+  }
+  .account-dropdown .card-text .btn{
+    width:100%;
+  }
+  .pricing-option{
+    width:100%
+  }
+
+  .third-sign-up-fields{
+    margin-top: -35%;
+  }
+  .mobile-hide{
+    display:none;
   }
 }
 
