@@ -288,6 +288,9 @@ textarea {
     }
 }
 
+
+/*vertical centering*/
+
 .Aligner {
   display: flex;
   align-items: center;
@@ -312,6 +315,9 @@ textarea {
     overflow: hidden;
 }
 
+
+/*homepage*/
+
 .home-search-input{
     display: inline-block!important;
     width: 40%!important;
@@ -326,6 +332,7 @@ textarea {
     width: 10%!important;
     height: 60px;
     margin-bottom: 1px;
+    padding-top: 16px!important;
 }
 
 .search-form{
@@ -338,11 +345,21 @@ textarea {
     margin: 0 auto;
 }
 
+
+
+
+
+
+/*nav*/
+
 .nav-search{
     width: 300px!important;
     text-align: center;
     margin-left: 25px;    
 }
+
+
+
 
  #map {
     height: 100%;
