@@ -259,6 +259,10 @@ function hideAlert(){
 	$('.alert').hide();
 };
 
+function removeMediaFromCampaign(){
+	$(this).parents('tr').remove();
+}
+
 $( document ).ready(function() {
  	$('span.checkmark').on('click', function(e){
  		console.log('checkmark click event')
@@ -286,4 +290,5 @@ $( document ).ready(function() {
  	$('.add-to-campaign').on('click', addToCampaign);
  	$('.hide-alert').on('click', hideAlert);
  	$('.amend-pricing').on('click', togglePricingOptions);
+ 	$('.remove-media').on('click', removeMediaFromCampaign);
  });

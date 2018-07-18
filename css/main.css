@@ -349,6 +349,10 @@ textarea {
 
 
 
+.btn-secondary{
+  color:white!important;
+}
+
 
 /*nav*/
 
@@ -635,6 +639,10 @@ h5.username{
 
 .campaign-new-height{
   height: 55px;
+}
+
+.campaign-new-height.btn{
+  padding-top: 14px!important;
 }
 
 .account-features{
