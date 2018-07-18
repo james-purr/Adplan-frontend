@@ -224,6 +224,21 @@ function goToRegConfirmation(){
 	$('.form-header').addClass('hidden');
 };
 
+function togglePricingOptions(){
+	$('.account-dropdown').fadeOut();
+	if($( ".media-costings-block" ).css('right') == "0px"){
+		$( ".media-costings-block" ).animate({
+		    right: "-=380",
+		  }, 500, function() {
+		});
+	}else{
+		$( ".media-costings-block" ).animate({
+		    right: "+=380",
+		  }, 500, function() {
+		});		
+	}
+};
+
 $( document ).ready(function() {
  	$('span.checkmark').on('click', function(e){
  		console.log('checkmark click event')
@@ -247,4 +262,5 @@ $( document ).ready(function() {
  	$('.account-link').on('click', openAccountDetails);
  	$('.go-to-billing').on('click', goToBillingSection);
  	$('.go-to-payment-confirmed').on('click', goToRegConfirmation);
+ 	$('.pricing-btn').on('click', togglePricingOptions);
  });

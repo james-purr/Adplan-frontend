@@ -487,7 +487,7 @@ span.tick.active{
   color: white;
 }
 
-.adspace-info-block{
+.adspace-info-block, .media-costings-block{
     position: absolute!important;
     right: -380px;
     top: 79px;  
@@ -495,9 +495,13 @@ span.tick.active{
     background: white;
 }
 
-.adspace-info-block .content{
+
+
+.adspace-info-block .content, .media-costings-block .content{
   padding: 15px;
 }
+
+
 /*.adspace-info-block .content.address{
   text-align:center;
 }*/
@@ -635,6 +639,23 @@ h5.username{
     width: 87%;
     background: #5d5b5b;
     padding: 19px;
+}
+
+
+/*order confirmed*/
+
+.order-confirmed{
+  text-align:center;
+}
+
+.order-items{
+    padding: 28px;
+    background: #5d5b5b8a;
+    margin: 0 auto;
+}
+
+.button-wrapper{
+  margin-top: 20px;
 }
 
 html,body, .full-height{
